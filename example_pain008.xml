@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A valid SEPA Core direct debit (pain.008.001.02) with test data. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.008.001.02">
+  <CstmrDrctDbtInitn>
+    <GrpHdr>
+      <MsgId>MSG-2030-01-001</MsgId>
+      <CreDtTm>2030-01-02T09:30:00</CreDtTm>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>149.50</CtrlSum>
+      <InitgPty><Nm>Example Sports Club</Nm></InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PMT-2030-01</PmtInfId>
+      <PmtMtd>DD</PmtMtd>
+      <NbOfTxs>2</NbOfTxs>
+      <CtrlSum>149.50</CtrlSum>
+      <PmtTpInf>
+        <SvcLvl><Cd>SEPA</Cd></SvcLvl>
+        <LclInstrm><Cd>CORE</Cd></LclInstrm>
+        <SeqTp>RCUR</SeqTp>
+      </PmtTpInf>
+      <ReqdColltnDt>2030-01-15</ReqdColltnDt>
+      <Cdtr><Nm>Example Sports Club</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>DE89370400440532013000</IBAN></Id></CdtrAcct>
+      <CdtrAgt><FinInstnId><BIC>COBADEFFXXX</BIC></FinInstnId></CdtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtrSchmeId>
+        <Id><PrvtId><Othr><Id>DE98ZZZ09999999999</Id><SchmeNm><Prtry>SEPA</Prtry></SchmeNm></Othr></PrvtId></Id>
+      </CdtrSchmeId>
+      <DrctDbtTxInf>
+        <PmtId><EndToEndId>MEMBER-0001-2030-01</EndToEndId></PmtId>
+        <InstdAmt Ccy="EUR">74.75</InstdAmt>
+        <DrctDbtTx><MndtRltdInf><MndtId>MANDATE-0001</MndtId><DtOfSgntr>2025-03-01</DtOfSgntr></MndtRltdInf></DrctDbtTx>
+        <DbtrAgt><FinInstnId><BIC>ABNANL2A</BIC></FinInstnId></DbtrAgt>
+        <Dbtr><Nm>J. Jansen</Nm></Dbtr>
+        <DbtrAcct><Id><IBAN>NL91ABNA0417164300</IBAN></Id></DbtrAcct>
+        <RmtInf><Ustrd>Membership fee January 2030</Ustrd></RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId><EndToEndId>MEMBER-0002-2030-01</EndToEndId></PmtId>
+        <InstdAmt Ccy="EUR">74.75</InstdAmt>
+        <DrctDbtTx><MndtRltdInf><MndtId>MANDATE-0002</MndtId><DtOfSgntr>2025-04-12</DtOfSgntr></MndtRltdInf></DrctDbtTx>
+        <DbtrAgt><FinInstnId><BIC>GKCCBEBB</BIC></FinInstnId></DbtrAgt>
+        <Dbtr><Nm>M. Peeters</Nm></Dbtr>
+        <DbtrAcct><Id><IBAN>BE68539007547034</IBAN></Id></DbtrAcct>
+        <RmtInf><Ustrd>Membership fee January 2030</Ustrd></RmtInf>
+      </DrctDbtTxInf>
+    </PmtInf>
+  </CstmrDrctDbtInitn>
+</Document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The same direct debit with typical mistakes that make a bank reject the file. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.008.001.02">
+  <CstmrDrctDbtInitn>
+    <GrpHdr>
+      <MsgId>MSG-2026-10-001</MsgId>
+      <CreDtTm>2026-09-28T09:30:00</CreDtTm>
+      <NbOfTxs>3</NbOfTxs>
+      <CtrlSum>150.00</CtrlSum>
+      <InitgPty><Nm>Example Sports Club</Nm></InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PMT-2026-10</PmtInfId>
+      <PmtMtd>DD</PmtMtd>
+      <PmtTpInf>
+        <SvcLvl><Cd>SEPA</Cd></SvcLvl>
+        <LclInstrm><Cd>CORE</Cd></LclInstrm>
+        <SeqTp>RECUR</SeqTp>
+      </PmtTpInf>
+      <ReqdColltnDt>2026-10-01</ReqdColltnDt>
+      <Cdtr><Nm>Example Sports Club</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>DE89370400440532013000</IBAN></Id></CdtrAcct>
+      <CdtrAgt><FinInstnId><BIC>COBADEFFXXX</BIC></FinInstnId></CdtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtrSchmeId>
+        <Id><PrvtId><Othr><Id>DE98ZZZ09999999998</Id><SchmeNm><Prtry>SEPA</Prtry></SchmeNm></Othr></PrvtId></Id>
+      </CdtrSchmeId>
+      <DrctDbtTxInf>
+        <PmtId><EndToEndId>MEMBER-0001-2026-10</EndToEndId></PmtId>
+        <InstdAmt Ccy="EUR">74.75</InstdAmt>
+        <DrctDbtTx><MndtRltdInf><MndtId>MANDATE-0001</MndtId><DtOfSgntr>2025-03-01</DtOfSgntr></MndtRltdInf></DrctDbtTx>
+        <DbtrAgt><FinInstnId><BIC>ABNANL2A</BIC></FinInstnId></DbtrAgt>
+        <Dbtr><Nm>J. Jansen</Nm></Dbtr>
+        <DbtrAcct><Id><IBAN>NL91ABNA0417164301</IBAN></Id></DbtrAcct>
+        <RmtInf><Ustrd>Membership fee October 2026</Ustrd></RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId><EndToEndId>MEMBER//0002</EndToEndId></PmtId>
+        <InstdAmt Ccy="EUR">74.75</InstdAmt>
+        <DrctDbtTx><MndtRltdInf><MndtId>MANDATE-0002</MndtId><DtOfSgntr>2026-10-05</DtOfSgntr></MndtRltdInf></DrctDbtTx>
+        <DbtrAgt><FinInstnId><BIC>GKCCBEBB</BIC></FinInstnId></DbtrAgt>
+        <Dbtr><Nm>Müller &amp; Söhne</Nm></Dbtr>
+        <DbtrAcct><Id><IBAN>BE68539007547034</IBAN></Id></DbtrAcct>
+        <RmtInf><Ustrd>Membership fee October 2026</Ustrd></RmtInf>
+      </DrctDbtTxInf>
+    </PmtInf>
+  </CstmrDrctDbtInitn>
+</Document>
